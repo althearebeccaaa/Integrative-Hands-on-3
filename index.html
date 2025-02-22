@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Text Button</title>
+    <style>
+        .purple-text {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="message">Click the button to change this text.</p>
+    <button onclick="toggleText()">Click Me</button>
+
+    <script>
+        function toggleText() {
+            let message = document.getElementById("message");
+
+            if (message.innerText === "Click the button to change this text.") {
+                message.innerText = `Kamukha mo si Paraluman
+No'ng tayo ay bata pa
+At ang galing-galing mong sumayaw
+Mapa-boogie man o cha-cha
+Ngunit ang paborito
+Ay pagsayaw mo ng El Bimbo
+Nakakaindak, nakakaaliw
+Nakakatindig-balahibo
+Pagkagaling sa 'skuwela ay dederetso na sa inyo
+At buong maghapon ay tinuturuan mo ako
+Magkahawak ang ating kamay
+At walang kamalay-malay
+Na tinuruan mo ang puso ko
+Na umibig na tunay
+
+Naninigas ang aking katawan
+'Pag umikot na ang plaka
+Patay sa kembot ng bewang mo
+At pungay ng 'yong mga mata
+Lumiliwanag ang buhay
+Habang tayo'y magkaakbay
+At dahan-dahang dumudulas
+Ang kamay ko sa makinis mong braso, ooh
+
+Sana noon pa man ay sinabi na sa iyo
+Kahit hindi na uso ay ito lang ang alam ko
+Magkahawak ang ating kamay
+At walang kamalay-malay
+Na tinuruan mo ang puso ko
+Na umibig na tunay
+
+La-la-la-la, la-la
+La-la, la-la-la
+
+Lumipas ang maraming taon
+'Di na tayo nagkita
+Balita ko'y may anak ka na
+Ngunit walang asawa
+Tagahugas ka raw
+Ng pinggan sa may Ermita
+At isang gabi'y nasagasaan
+Sa isang madilim na eskinita, ha
+
+Lahat ng pangarap ko'y bigla lang natunaw
+Sa panaginip na lang pala kita maisasayaw
+Magkahawak ang ating kamay
+At walang kamalay-malay
+Na tinuruan mo ang puso ko
+Na umibig na tunay
+Magkahawak ang ating kamay
+At walang kamalay-malay
+Na tinuruan mo ang puso ko
+Na umibig na tunay`;
+
+                message.classList.add("purple-text");
+            } else {
+                message.innerText = "Click the button to change this text.";
+                message.classList.remove("purple-text");
+            }
+        }
+    </script>
+
+</body>
+</html>
